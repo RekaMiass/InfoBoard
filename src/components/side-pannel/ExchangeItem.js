@@ -9,13 +9,13 @@ const ExchangeItem = () => {
 
     useEffect(() => {
         const getDollar = async () => {
-            const response1 = await axios.get(`https://v6.exchangerate-api.com/v6/${process.env.REACT_APP_EXCHANGE_KEY}/pair/USD/RUB0`); 
+            const response1 = await axios.get(`https://v6.exchangerate-api.com/v6/${process.env.REACT_APP_EXCHANGE_KEY}/pair/USD/RUB`); 
             console.log(response1);
             setDollar(response1.data);
         }
         getDollar();
         const getEuro = async () => {
-            const response2 = await axios.get(`https://v6.exchangerate-api.com/v6/${process.env.REACT_APP_EXCHANGE_KEY}/pair/EUR/RUB0`); 
+            const response2 = await axios.get(`https://v6.exchangerate-api.com/v6/${process.env.REACT_APP_EXCHANGE_KEY}/pair/EUR/RUB`); 
             console.log(response2);
             setEuro(response2.data);
         }   
