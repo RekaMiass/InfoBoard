@@ -14,7 +14,6 @@
 }
 
 .currency {
-
     background-color: rgb(122, 164, 228);
     width: 240px;
     height: 55px;
@@ -23,24 +22,13 @@
     border-radius: 10px;
 }
 
-#usd {
+.exch {
     padding-left: 5px;
     float: left;
     width: 55%;
 }
 
-#usd-rub {
-    float: right;
-    width: 30%;
-}
-
-#eur {
-    padding-left: 5px;
-    float: left;
-    width: 55%;
-}
-
-#eur-rub {
+.exch-rub {
     float: right;
     width: 30%;
 }
@@ -52,12 +40,10 @@
     .currency {
         width: 144px;
     }
-    #usd-rub {
-        width: 50px;
+    .exch-rub {
+        width: 49px;
     }
-    #eur-rub {
-        width: 50px
-    }
+
 }
 
 @media (max-width: 850px) {
@@ -71,31 +57,16 @@
     }
 }
 
-@media (max-width: 685px) {
+@media (max-width: 555px) {
     .currency-app {
-        margin-top: 80px;
-    }
-}
-
-@media (max-width: 600px) {
-    .currency-app {
-        margin-top: 110px;
-        margin-left: -360px;
-        width: 120px;
+        margin-left: 20px;
+        width: 110px;
     }
     .currency {
-        width: 115px;
+        width: 105px;
     }
-    #usd-rub {
-        width: 46px;
+    .exch-rub {
+        width: 42px;
     }
-    #eur-rub {
-        width: 46px;
-    }
-}
 
-@media (max-width: 492px) {
-    .currency-app {
-        margin-left: -270px;
-    }
 }

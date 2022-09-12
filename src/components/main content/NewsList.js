@@ -8,7 +8,7 @@ const NewsList = () => {
 
     useEffect(() => {
         const getArticles = async () => {
-            const response = await axios.get('https://newsapi.org/v2/top-headlines?country=us&apiKey=82a990875d204e70a268c73d908945a1')
+            const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.REACT_APP_NEWS_KEY}`)
             console.log(response);
             setArticles(response.data.articles)
         }

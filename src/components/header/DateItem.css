@@ -1,7 +1,7 @@
 .date {
-    width: 240px;
-    height: auto;
-    margin-left: 20px;
+    width: 110px;
+    height: 60px;
+    margin-left: 60%;
     margin-right: 20px;
     margin-top: 20px;
     padding: 5px;
@@ -14,14 +14,14 @@
     font-size: 26px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 680px) {
     .date {
-        width: 150px;
+        margin-left: 40%;
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 440px) {
     .date {
-        height: 60px;
+        margin-left: 25%;
     }
 }

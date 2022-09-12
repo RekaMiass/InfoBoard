@@ -1,3 +1,7 @@
+.App {
+    padding-top: 130px;
+}
+
 .news {
     margin-left: 300px;
 }
@@ -11,7 +15,6 @@
 @media (max-width: 850px) {
     .news {
         margin-left: 15%;
-        padding-top: 100px;
     }
 }
 
@@ -24,5 +27,11 @@
 @media (max-width: 640px) {
     .news {
         margin-left: 20%;
+    }
+}
+
+@media (max-width: 450px) {
+    .news {
+        margin-left: 15%;
     }
 }

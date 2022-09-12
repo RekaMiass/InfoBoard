@@ -9,13 +9,13 @@ const ExchangeItem = () => {
 
     useEffect(() => {
         const getDollar = async () => {
-            const response1 = await axios.get('https://v6.exchangerate-api.com/v6/53ab266be334890d1e755e4f/pair/USD/RUB'); 
+            const response1 = await axios.get(`https://v6.exchangerate-api.com/v6/${process.env.REACT_APP_EXCHANGE_KEY}/pair/USD/RUB0`); 
             console.log(response1);
             setDollar(response1.data);
         }
         getDollar();
         const getEuro = async () => {
-            const response2 = await axios.get('https://v6.exchangerate-api.com/v6/53ab266be334890d1e755e4f/pair/EUR/RUB'); 
+            const response2 = await axios.get(`https://v6.exchangerate-api.com/v6/${process.env.REACT_APP_EXCHANGE_KEY}/pair/EUR/RUB0`); 
             console.log(response2);
             setEuro(response2.data);
         }   
@@ -26,12 +26,12 @@ const ExchangeItem = () => {
     return (
         <div className='currency-app'>
             <div className='currency'>
-                <p id='usd'>USD</p>
-                <p id='usd-rub'><b>{parseFloat(dollar.conversion_rate).toFixed(2)}₽</b></p>
+                <p className='exch'>USD</p>
+                <p className='exch-rub'><b>{parseFloat(dollar.conversion_rate).toFixed(2)}₽</b></p>
             </div>
             <div className='currency'>
-                <p id='eur'>EUR</p>
-                <p id='eur-rub'><b>{parseFloat(euro.conversion_rate).toFixed(2)}₽</b></p>
+                <p className='exch'>EUR</p>
+                <p className='exch-rub'><b>{parseFloat(euro.conversion_rate).toFixed(2)}₽</b></p>
             </div>
         </div>
     )

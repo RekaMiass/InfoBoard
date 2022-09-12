@@ -24,17 +24,17 @@ button {
         width: 100%;
         display: inline-flex;
         padding-bottom: 30px;
-        
+        margin-left: 15px;
     }
     .content{
         display: none;
     }
     .side-panel {
+        margin-top: -9px;
         position: fixed;
         display: inline-flex;
         width: 100%;
-        background: rgba(255, 255, 255, 0.9);
-        box-shadow: 0 0 3rem 0  rgb(255, 255, 255); 
+        background-color: rgba(240, 128, 24, 0.96);
     }
     .side-panel-content {
         display: inline-flex;
@@ -44,9 +44,10 @@ button {
         cursor: pointer;
         display: block;
         height: 50px;
+        width: 60px;
         display: inline;
         margin-top: 20px;
-        margin-left: 85%; 
+        margin-left: 20px; 
         background-color: rgb(99, 0, 0);
         color: #fff;
         border-radius: 10px;
@@ -61,9 +62,12 @@ button {
     }
 }
 
-@media (max-width: 685px) {
+@media (max-width: 360px) {
+    .hidden-content {
+        margin-left: 5px;
+    }
     button {
-        margin-left: 80%;
-        width: 70px;
+        margin-left: 15px;
     }
 }
+

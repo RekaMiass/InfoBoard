@@ -7,7 +7,7 @@ const WeatherItem = () => {
     const [data, setData] = useState({});
     const [location, setLocation] = useState('');
 
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=c569c52a7b7333a701ecb6a982ef5c86`
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${process.env.REACT_APP_WEATHER_KEY}`;
     const searchLocation = (event) => {
         if (event.key === 'Enter') {
             axios.get(url).then((response) => {
