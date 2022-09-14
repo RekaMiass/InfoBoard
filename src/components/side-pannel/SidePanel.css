@@ -34,7 +34,7 @@ button {
         position: fixed;
         display: inline-flex;
         width: 100%;
-        background-color: rgba(240, 128, 24, 0.96);
+        background-color: rgba(240, 128, 24, 0.8);
     }
     .side-panel-content {
         display: inline-flex;
