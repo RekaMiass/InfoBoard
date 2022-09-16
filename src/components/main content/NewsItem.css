@@ -17,7 +17,6 @@
 .news-img {
     width: 250px;
     height: 150px;
-    border-radius: 10px;
     border: solid 2px rgb(170, 169, 169);
     padding: 5px;
     box-shadow: 0 0.2rem 0.2rem 0.2rem rgba(172, 172, 172, 0.65);
