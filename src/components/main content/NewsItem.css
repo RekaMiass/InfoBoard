@@ -15,6 +15,7 @@
 }
 
 .news-img {
+    background-image: url(/public/alt-pic.png);
     width: 250px;
     height: 150px;
     border: solid 2px rgb(170, 169, 169);
