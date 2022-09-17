@@ -10,7 +10,7 @@ const NewsList = () => {
         const getArticles = async () => {
 //             API url can be used here. But for visual dislay I put data into json file and got them from it. 
 //             const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.REACT_APP_NEWS_KEY}`)
-            const response = await axios.get('./data.json')
+            const response = await axios.get('./news-data.json')
             console.log(response);
             setArticles(response.data.articles)
         }
