@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import './WeatherItem.css'
 
@@ -8,6 +8,18 @@ const WeatherItem = () => {
     const [location, setLocation] = useState('');
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${process.env.REACT_APP_WEATHER_KEY}`;
+    const defaultUrl = `https://api.openweathermap.org/data/2.5/weather?q=Moscow&units=metric&appid=${process.env.REACT_APP_WEATHER_KEY}`;
+    
+    useEffect(() => {
+        const getData = async() => {
+            const res = await axios.get(defaultUrl)
+            setData(res.data);
+            console.log(res);
+        }
+        getData()
+    // eslint-disable-next-line
+    }, [])
+    
     const searchLocation = (event) => {
         if (event.key === 'Enter') {
             axios.get(url).then((response) => {
